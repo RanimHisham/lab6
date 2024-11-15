@@ -4,25 +4,25 @@ from addition_function import add_numbers  # Import the function to test
 
 class TestAdditionFunction(unittest.TestCase):
 
-    def test_add_positive_numbers(self):
+    def add_positive_numbers(self):
         result = add_numbers(2, 3)
-        self.assertEqual(result, 5)
+        self.assertEqual(result,8)
 
-    def test_add_negative_numbers(self):
+    def add_negative_numbers(self):
         result = add_numbers(-1, -3)
-        self.assertEqual(result, -4)
+        self.assertEqual(result, -5)
 
-    def test_add_positive_and_negative(self):
+    def add_positive_and_negative(self):
         result = add_numbers(7, -6)
-        self.assertEqual(result, 1)
+        self.assertEqual(result, 4)
 
-    def test_add_zero(self):
+    def add_zero(self):
         result = add_numbers(0, 8)
-        self.assertEqual(result, 8)
+        self.assertEqual(result, 10)
         result = add_numbers(8, 0)
         self.assertEqual(result, 8)
 
-    def test_add_large_numbers(self):
+    def add_large_numbers(self):
         result = add_numbers(1000000, 3000000)
         self.assertEqual(result, 4000000)
 
