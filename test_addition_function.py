@@ -6,7 +6,7 @@ class TestAdditionFunction(unittest.TestCase):
 
     def add_positive_numbers(self):
         result = add_numbers(2, 3)
-        self.assertEqual(result,8)
+        self.assertEqual(result,5)
 
     def add_negative_numbers(self):
         result = add_numbers(-1, -3)
