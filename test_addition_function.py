@@ -1,6 +1,5 @@
 import unittest
-from addition_function import add_numbers  # Import the function to test
-
+from addition_function import add_numbers  
 
 class TestAdditionFunction(unittest.TestCase):
 
